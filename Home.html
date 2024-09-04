@@ -10,12 +10,12 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-body-primary">
         <div class="container-fluid">
-            <img src="/img/logo-learnit.png" alt="logo" width="120" height="35">
+            <img class="logo" src="/img/logo-learnit.png" alt="logo" width="150" height="50">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
@@ -25,18 +25,24 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Soporte</a>
               </li>
-              
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <div class="input-group"> <!-- Agrupa el campo de entrada y el botón -->
+                  <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
+                  <button class="btn btn-primary " type="submit">
+                    <img src="/img/logo-buscar.png" alt="" width="35" height="35">
+                  </button>
+              </div>
             </form>
-          </div>
+            <button class="btn btn-primary ms-2">
+              <img src="/img/icono-home.png" alt="#" width="35" height="35"> 
+            </button>
+          </div>  
         </div>
       </nav>
 </header>
 <body>
-    <div class="div-bienvenida">
+    <div class="caja-bienvenida">
         <h1>Learnit</h1>
         <p>Plataforma de aprendizaje, con cursos de programación y tecnologías de la información.</p>
     </div>
