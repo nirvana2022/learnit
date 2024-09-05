@@ -1,40 +1,72 @@
-.App {
+/* Estilos de App.css */
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./fondo-home.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1; /* Ajusta la transparencia aquí */
+  z-index: -1; /* Envía el pseudo-elemento detrás del contenido del body */
+}
+
+.caja-bienvenida {
+  margin-top: 15%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    border-color: aqua;
-    border-style: double;
-    border-radius: 10px;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  border-radius: 5px;
+  border-color: white;
+  border-style: dotted;
+  border-width: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.collapse.navbar-collapse {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Centra los elementos de la lista horizontalmente */
+  flex: 1; /* Permite que la lista de navegación ocupe el espacio disponible */
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px; /* Espaciado opcional entre elementos */
+  list-style: none;
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  margin-right: 10px; /* Espaciado opcional entre el campo de entrada y el botón */
+}
+
+.nav-link {
+  font-family: 'Arial', sans-serif; /* Cambia esto por el tipo de letra que prefieras */
+  color: #000; /* Color inicial del texto */
+  text-decoration: none; /* Quita el subrayado del texto */
+  transition: color 0.3s ease-in-out; /* Suaviza la transición del color */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Cambia esto por el color que prefieras para el hover */
 }

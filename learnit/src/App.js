@@ -1,24 +1,23 @@
-import logo from './logo.png';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Inicio from "./components/Inicio";
+import Registrarse from "./components/Registrarse";
+import Soporte from "./components/Soporte";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Bienvenido a learnit, plataforma de aprendizaje de nuevas tecnologías
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/registrarse" element={<Registrarse />} />
+        <Route path="/soporte" element={<Soporte />} />
+      </Routes>
+    </Router>
   );
 }
 
