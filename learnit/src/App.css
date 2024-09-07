@@ -62,11 +62,23 @@ body::before {
 
 .nav-link {
   font-family: 'Arial', sans-serif; /* Cambia esto por el tipo de letra que prefieras */
-  color: #000; /* Color inicial del texto */
+  color: white; /* Color inicial del texto */
   text-decoration: none; /* Quita el subrayado del texto */
   transition: color 0.3s ease-in-out; /* Suaviza la transición del color */
 }
 
 .nav-link:hover {
-  color: #007bff; /* Cambia esto por el color que prefieras para el hover */
+  color: #28a745; /* Cambia esto por el color que prefieras para el hover */
+}
+
+.center-content {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+  text-align: center; /* Centra el texto */
+}
+li{
+  color: red;
 }
