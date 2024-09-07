@@ -79,6 +79,3 @@ body::before {
   height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
   text-align: center; /* Centra el texto */
 }
-li{
-  color: red;
-}
