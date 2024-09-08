@@ -14,14 +14,15 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./fondo-home.png');
+  background-image: url("./fondo-home.png");
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 1; /* Ajusta la transparencia aquí */
-  z-index: -1; /* Envía el pseudo-elemento detrás del contenido del body */
+  z-index: -1;
 }
 
 .caja-bienvenida {
+  font-weight: 100;
+  font-style: oblique;
   margin-top: 15%;
   text-align: center;
   color: white;
@@ -29,26 +30,31 @@ body::before {
 
 .logo {
   border-radius: 5px;
-  border-color: white;
-  border-style: dotted;
+  border-color: #171f28;
+  border-style: groove;
   border-width: 2px;
+  width: 160px;
+  height: 40px;
 }
-
+/*Estilo para comportamiento responsive navbar*/
 .collapse.navbar-collapse {
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
-  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5d6c89;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 10px;
 }
 
 .navbar-nav {
   display: flex;
-  justify-content: center; /* Centra los elementos de la lista horizontalmente */
-  flex: 1; /* Permite que la lista de navegación ocupe el espacio disponible */
+  justify-content: center;
+  flex: 1;
 }
 
 .navbar-nav .nav-item {
-  margin: 0 10px; /* Espaciado opcional entre elementos */
-  list-style: none;
+  margin: 0 10px;
 }
 
 .form-inline {
@@ -57,18 +63,12 @@ body::before {
 }
 
 .form-control {
-  margin-right: 10px; /* Espaciado opcional entre el campo de entrada y el botón */
+  margin-right: 10px;
 }
 
 .nav-link {
-  font-family: 'Arial', sans-serif; /* Cambia esto por el tipo de letra que prefieras */
-  color: white; /* Color inicial del texto */
-  text-decoration: none; /* Quita el subrayado del texto */
-  transition: color 0.3s ease-in-out; /* Suaviza la transición del color */
-}
-
-.nav-link:hover {
-  color: #28a745; /* Cambia esto por el color que prefieras para el hover */
+  font-family: "Arial", sans-serif;
+  transition: color 0.3s ease-in-out;
 }
 
 .center-content {
@@ -78,4 +78,95 @@ body::before {
   align-items: center;
   height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
   text-align: center; /* Centra el texto */
+}
+
+.registro {
+  text-align: center;
+  margin-top: 40px;
+}
+.titulo {
+  color: #d3cfd7;
+}
+
+.logo-registro {
+  border-radius: 5px;
+  border-color: white;
+  border-width: 2px;
+}
+
+.campo-registro {
+  color: #d3cfd7;
+}
+.input-registro {
+  border-radius: 10px;
+  opacity: 0.8;
+  text-align: center;
+}
+.input-nacimiento {
+  border-radius: 10px;
+  opacity: 0.8;
+  width: 185px;
+  text-align: center;
+}
+.btn-save {
+  border-radius: 10px;
+  background-color: #83d900;
+  color: #34495e;
+  border-style: double;
+  width: 100px;
+  height: 40px;
+}
+.btn-save:hover {
+  background-color: #5050ee;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.boton-responsive {
+  background-color: #83d900;
+  border-radius: 5px;
+}
+
+.btn-menu {
+  color: #ffffff;
+  background-color: #5d6c89;
+  border-color: #5d6c89;
+  border-style: dotted;
+}
+.btn-menu:hover {
+  background-color: #5050ee;
+}
+.d-flex {
+  margin-right: 10px;
+}
+.div-home {
+  border-radius: 10px;
+}
+
+.btn-buscar {
+  border-radius: 10px;
+  background-color: #83d900;
+  border-color: #83d900;
+  border-style: double;
+}
+
+.btn-buscar:hover {
+  background-color: #5050ee;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.form-control {
+  margin-right: 0px;
+}
+
+.btn-home {
+  background-color: #83d900;
+  border-radius: 10px;
+  border-color: #83d900;
+  border-style: dashed;
+}
+.btn-home:hover {
+  background-color: #5050ee;
+  border-color: #ffffff;
+  color: #ffffff;
 }
