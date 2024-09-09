@@ -108,6 +108,12 @@ body::before {
   width: 185px;
   text-align: center;
 }
+
+.input-registro:hover{
+  border-color: #83d900;
+  border-style:double;
+}
+
 .btn-save {
   border-radius: 10px;
   background-color: #83d900;
@@ -163,7 +169,6 @@ body::before {
   background-color: #83d900;
   border-radius: 10px;
   border-color: #83d900;
-  border-style: dashed;
 }
 .btn-home:hover {
   background-color: #5050ee;
