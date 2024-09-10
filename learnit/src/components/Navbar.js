@@ -24,6 +24,11 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-2">
             <li className="nav-item">
+              <Link className="nav-link" to="/ingreso">
+                <button className="btn-menu">Ingresar</button>
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/registrarse">
                 <button className="btn-menu">Registrarse</button>
               </Link>
@@ -36,6 +41,11 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/soporte">
                 <button className="btn-menu">Soporte</button>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/estudiante">
+                <button className="btn-menu">Estudiante</button>
               </Link>
             </li>
           </ul>
