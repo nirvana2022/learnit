@@ -15,6 +15,7 @@ body::before {
   width: 100%;
   height: 100%;
   background-image: url("./fondo-home.png");
+  opacity: 0.8;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -179,6 +180,7 @@ body::before {
   text-align: center;
   margin-top: 40px;
 }
+
 .logo-ingreso {
   text-align: center;
   margin-top: 20px;
