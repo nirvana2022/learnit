@@ -34,18 +34,13 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/cursos">
+              <Link className="nav-link" to="/curso">
                 <button className="btn-menu">Cursos</button>
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/soporte">
                 <button className="btn-menu">Soporte</button>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/estudiante">
-                <button className="btn-menu">Estudiante</button>
               </Link>
             </li>
           </ul>

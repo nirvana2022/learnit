@@ -1,5 +1,6 @@
 # learnit
-plataforma de aprendizaje 
+
+plataforma de aprendizaje
 
 Tecnologías usadas:
 -> HTML

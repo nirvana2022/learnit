@@ -6,7 +6,7 @@ import Inicio from "./components/Inicio";
 import Registrarse from "./components/Registrarse";
 import Soporte from "./components/Soporte";
 import Ingresar from "./components/Ingresar";
-import Estudiante from "./components/Estudiante";
+import Curso from "./components/Curso";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
@@ -19,7 +19,7 @@ function App() {
         <Route path="/registrarse" element={<Registrarse />} />
         <Route path="/soporte" element={<Soporte />} />
         <Route path="/ingreso" element={<Ingresar />} />
-        <Route path="/estudiante" element={<Estudiante />} />
+        <Route path="/curso" element={<Curso />} />
       </Routes>
     </Router>
   );

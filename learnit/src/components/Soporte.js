@@ -5,8 +5,8 @@ function Soporte() {
     <div className="caja-bienvenida">
       <h1>Soporte</h1>
       <p>
-        Para reportar una requerimiento puede hacerlo directamente al correo
-        electrónico correo@mail.com
+        Para reportar una requerimiento o incidencia puede hacerlo directamente
+        al correo electrónico correo@mail.com
       </p>
     </div>
   );
