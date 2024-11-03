@@ -264,11 +264,6 @@ progress::-moz-progress-bar {
   color: #339ba4;
 }
 
-p {
-  color: #d3cfd7;
-  margin: 0;
-}
-
 .btn-curso-oferta {
   background-color: #83d900;
   color: #34495e;
@@ -333,4 +328,13 @@ progress::-moz-progress-bar {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
+}
+
+.caja-texto {
+  border-radius: 20px;
+  border-style: double;
+  border-color: #e82931;
+  color: white;
+  background-color: #252525;
+  opacity: 0.5;
 }
